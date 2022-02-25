@@ -1,0 +1,122 @@
+/* --------------------- BTN-EVULUS-YELLOW--------------------- */
+
+@mixin btn-personalizado($bg, $padding, $weight, $font-size) {
+    width: $weight;
+    padding: $padding;
+    margin: 0 auto;
+    color: $color-texo;
+    background: $bg;
+    transition: $transition-all;
+    -webkit-transition: $transition-all;
+    -moz-transition: $transition-all;
+    -ms-transition: $transition-all;
+    -o-transition: $transition-all;
+    font-weight: 700;
+    font-size: $font-size;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: inline-block;
+    &:focus {
+        border: none;
+    }
+}
+
+.btn-evulus {
+    @include btn-personalizado($color-btn, 0px, auto, 1.5rem);
+    &:hover {
+        box-shadow: 0px 0px 2rem $color-btn;
+    }
+}
+
+.btn-evulus-medium {
+    @include btn-personalizado($color-btn, 0px 20px 4px 20px, auto, 1rem);
+    &:hover {
+        background: #e0a800;
+        color: $color-texo !important;
+        text-decoration: none !important;
+    }
+    &:active {
+        background: #d39e00;
+    }
+}
+
+.btn-evulus-small {
+    @include btn-personalizado($color-btn, .5rem, auto, 1rem);
+    margin: 0;
+    &:hover {
+        background: #e0a800;
+        color: $color-texo !important;
+        text-decoration: none !important;
+    }
+    &:active {
+        background: #d39e00;
+    }
+}
+
+
+/* ------------------ BTN-EVULUS-WHITE ------------------ */
+
+@mixin btn-white($weight-w, $padding-p, $radius-br) {
+    width: $weight-w;
+    min-height: 67px;
+    background: $color-secundario;
+    padding: $padding-p;
+    display: flex;
+    align-items: center;
+    box-shadow: $box-shadow-primario;
+    transition: $transition-all;
+    -webkit-transition: $transition-all;
+    -moz-transition: $transition-all;
+    -ms-transition: $transition-all;
+    -o-transition: $transition-all;
+    border-radius: $radius-br;
+    -webkit-border-radius: $radius-br;
+    -moz-border-radius: $radius-br;
+    -ms-border-radius: $radius-br;
+    -o-border-radius: $radius-br;
+    &:hover {
+        background: #f2f2f2;
+    }
+}
+
+
+/* ----------------------- BTN NAV ---------------------- */
+
+.btn-1,
+.btn-2 {
+    @include btn-personalizado($color-principal, 0rem .5rem 5px, auto, .9rem);
+    color: $color-secundario;
+    margin: 0;
+    border: 1px solid $color-principal;
+    &:hover {
+        background: $color-principal;
+        color: $color-texo-claro;
+    }
+    &.active {
+        background: $color-principal;
+        color: $color-texo-claro;
+    }
+}
+
+.btn-2 {
+    border: 1px solid $color-principal;
+    color: $color-principal;
+    background: transparent;
+}
+
+.btn-evulus-green {
+    @include btn-personalizado($color-secundario, 0px .5rem 5px, 100%, .9rem);
+    white-space: nowrap;
+    &:hover {
+        background: $color-principal;
+        color: $color-texo-claro;
+    }
+    &.active {
+        background: $color-principal;
+        color: $color-texo-claro;
+    }
+}
