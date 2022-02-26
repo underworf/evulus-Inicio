@@ -133,7 +133,7 @@ main h5 {
 }
 
 .btn-green {
-  padding: 12px 40px;
+  padding: 12px 30px;
   color: black;
   background: #08907a;
   transition: all 300ms ease-in-out;
@@ -142,7 +142,7 @@ main h5 {
   -ms-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   font-weight: 600;
-  font-size: calc(23px + .5vw);
+  font-size: calc(12px + 1.5vw);
   text-align: center;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -246,6 +246,7 @@ main h5 {
   display: inline-block;
   height: auto;
   margin: 0;
+  border: 2px solid #ffbe1b;
 }
 .btn-evulus-small:focus {
   border: none;
@@ -259,9 +260,37 @@ main h5 {
   background: #d39e00;
 }
 
+.btn-evulus-white {
+  padding: 5px 35px;
+  color: black;
+  background: #ffffff;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  font-weight: 600;
+  font-size: calc(12px + 1.8vw);
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  color: #08907a;
+  border-radius: 30px;
+  box-shadow: 0px 0px 2rem #ffbe1b;
+  text-transform: uppercase;
+}
+.btn-evulus-white:focus {
+  border: none;
+}
+
 /* ----------------------- BTN NAV ---------------------- */
 .btn-dark, .btn-dark-1 {
-  padding: 0px 1.5rem 3px;
+  padding: 0px 1.5rem 0px;
   color: black;
   background: transparent;
   transition: all 300ms ease-in-out;
@@ -441,7 +470,7 @@ main h5 {
   .btn-dark, .btn-dark-1,
 .btn-evulus-small {
     font-size: 0.6rem;
-    padding: 0px 1rem 5px;
+    padding: 0px 1rem 0px;
   }
 
   .btn-dark, .btn-dark-1 {
@@ -459,18 +488,29 @@ main h5 {
   padding-bottom: 58px;
 }
 
+.subtitle {
+  font-size: calc(25px + 1.3wv);
+  margin-bottom: 40px;
+}
+
+.requisitos,
+.pasos,
+.reglas {
+  border-bottom: 1px solid #ffffff;
+}
+
 .staking {
-  padding-top: calc(20px + 6vw);
+  padding-top: calc(40px + 6vw);
 }
 .staking .staking-content__title h2,
 .staking .staking-content__title h1 {
-  font-size: calc(40px + 2.5vw);
+  font-size: calc(30px + 2.8vw);
 }
 .staking .staking-content__title h2 {
   font-weight: 300;
 }
 .staking .staking-content .btn-evulus {
-  font-size: calc(38px + 2vw);
+  font-size: calc(30px + 3vw);
   margin: 50px auto;
   display: table;
 }
@@ -493,33 +533,54 @@ main h5 {
 /* --------------------- REQUISITOS --------------------- */
 .requisitos {
   border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
 }
 .requisitos .participacion {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .requisitos .participacion .participacion-content p {
   font-size: calc(14px + .4vw);
 }
+.requisitos .participacion .participacion-content div {
+  width: fit-content;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
 .requisitos .participacion .participacion-content div a {
+  margin: 5px;
   width: 50px;
   background: transparent;
 }
-.requisitos .participacion .pasos {
-  border-top: 1px solid #ffffff;
+.requisitos .participacion .participacion-content .btn-evulus-white {
+  margin: 40px auto;
 }
 
+/* ------------------------ PASOS ----------------------- */
 /* ----------------------- .REGLAS ---------------------- */
 .reglas .row {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .reglas__list {
   list-style: decimal-leading-zero;
-  margin-left: 28px;
+  margin-left: 40px;
+  position: relative;
+  font-size: calc(17px + .5vw);
+  font-weight: 600;
 }
-
+.reglas__list li {
+  margin-bottom: 10px;
+}
+.reglas__list::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  left: calc(-30px + -40px);
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  background: url(../icons/i-icon.png);
+}
 .slider {
   background: #ffffff;
 }
@@ -551,19 +612,21 @@ main h5 {
   justify-content: center;
 }
 .contact__content h3 {
-  font-size: 2rem;
+  font-size: calc(18px + 1vw);
   margin: 0;
   font-weight: 400;
 }
 .contact__content h2 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: calc(32px + 1vw);
+  font-weight: 600;
 }
 
 .footer {
   color: #ffffff;
   padding-top: 45px;
   padding-bottom: 45px;
+  font-weight: 400;
+  font-size: 14px;
 }
 .footer__content h5 {
   margin-top: 20px;
@@ -572,6 +635,7 @@ main h5 {
 .footer__content .btn-evulus-small {
   padding: 0px 15px;
   font-size: 10px;
+  margin: 5px 0px;
 }
 .footer__content .social-icons--white li a img {
   width: 20px;
@@ -592,6 +656,18 @@ main h5 {
 @media screen and (max-width: 1366px) {
   .container {
     max-width: 1280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn-evulus-white,
+.btn-green,
+.btn-evulus-icon,
+.btn-evulus-medium {
+    font-size: 14px;
+  }
+
+  .btn-green {
+    padding: 5px 20px;
   }
 }
 

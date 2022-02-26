@@ -34,7 +34,7 @@
 }
 
 .btn-green {
-    @include btn-personalizado($color-principal, 12px 40px, calc(23px + .5vw));
+    @include btn-personalizado($color-principal, 12px 30px, calc(12px + 1.5vw));
     box-shadow: 0px 0px 2rem white;
     border-radius: 40px;
     color: $color-secundario;
@@ -70,6 +70,7 @@
 .btn-evulus-small {
     @include btn-personalizado($color-btn, .5rem, 1rem);
     margin: 0;
+    border: 2px solid $color-btn;
     &:hover {
         background: #e0a800;
         color: $color-texo !important;
@@ -80,11 +81,19 @@
     }
 }
 
+.btn-evulus-white {
+    @include btn-personalizado($color-secundario, 5px 35px, calc(12px + 1.8vw));
+    color: $color-principal;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2rem $color-btn;
+    text-transform: uppercase
+}
+
 
 /* ----------------------- BTN NAV ---------------------- */
 
 .btn-dark {
-    @include btn-personalizado(transparent, 0px 1.5rem 3px, .9rem);
+    @include btn-personalizado(transparent, 0px 1.5rem 0px, .9rem);
     margin: 10px 15px 10px 0px;
     border: 2px solid $color-principal;
     color: $color-texo;

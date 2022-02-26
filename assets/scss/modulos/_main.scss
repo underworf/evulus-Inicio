@@ -8,20 +8,31 @@
     padding-bottom: 58px;
 }
 
+.subtitle {
+    font-size: calc(25px + 1.3wv);
+    margin-bottom: 40px;
+}
+
+.requisitos,
+.pasos,
+.reglas {
+    border-bottom: 1px solid $color-secundario;
+}
+
 .staking {
-    padding-top: calc(20px + 6vw);
+    padding-top: calc(40px + 6vw);
     .staking-content {
         &__title {
             h2,
             h1 {
-                font-size: calc(40px + 2.5vw);
+                font-size: calc(30px + 2.8vw);
             }
             h2 {
                 font-weight: 300;
             }
         }
         .btn-evulus {
-            font-size: calc(38px + 2vw);
+            font-size: calc(30px + 3vw);
             margin: 50px auto;
             display: table;
         }
@@ -48,38 +59,63 @@
 
 .requisitos {
     border-top: 1px solid $color-secundario;
-    border-bottom: 1px solid $color-secundario;
     .participacion {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         .participacion-content {
             p {
                 font-size: calc(14px + .4vw);
             }
             div {
+                width: fit-content;
+                border: 1px solid $color-secundario;
+                border-radius: 10px;
                 a {
+                    margin: 5px;
                     width: 50px;
                     background: transparent;
                 }
             }
-        }
-        .pasos {
-            border-top: 1px solid $color-secundario;
+            .btn-evulus-white {
+                margin: 40px auto;
+            }
         }
     }
 }
+
+
+/* ------------------------ PASOS ----------------------- */
 
 
 /* ----------------------- .REGLAS ---------------------- */
 
 .reglas {
     .row {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }
     &__list {
         list-style: decimal-leading-zero;
-        margin-left: 28px;
+        margin-left: 40px;
+        position: relative;
+        font-size: calc(17px + .5vw);
+        font-weight: 600;
+        li {
+            margin-bottom: 10px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 30px;
+            left: calc(-30px + -40px);
+            top: 50%;
+            transform: translateY(-50%);
+            height: 30px;
+            background: url(../icons/i-icon.png);
+        }
+    }
+    .btn-evulus-medium {
+        // margin: 20px 0px;
     }
 }
 
@@ -116,13 +152,13 @@
         align-items: center;
         justify-content: center;
         h3 {
-            font-size: 2rem;
+            font-size: calc(18px + 1vw);
             margin: 0;
             font-weight: 400;
         }
         h2 {
-            font-size: 3rem;
-            font-weight: 500;
+            font-size: calc(32px + 1vw);
+            font-weight: 600;
         }
     }
 }

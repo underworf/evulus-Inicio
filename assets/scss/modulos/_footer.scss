@@ -2,6 +2,8 @@
     color: $color-secundario;
     padding-top: 45px;
     padding-bottom: 45px;
+    font-weight: 400;
+    font-size: 14px;
     &__content {
         h5 {
             margin-top: 20px;
@@ -10,6 +12,7 @@
         .btn-evulus-small {
             padding: 0px 15px;
             font-size: 10px;
+            margin: 5px 0px;
         }
         .social-icons--white {
             li a img {
