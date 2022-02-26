@@ -1,9 +1,7 @@
 /* --------------------- BTN-EVULUS-YELLOW--------------------- */
 
-@mixin btn-personalizado($bg, $padding, $weight, $font-size) {
-    width: $weight;
+@mixin btn-personalizado($bg, $padding, $font-size) {
     padding: $padding;
-    margin: 0 auto;
     color: $color-texo;
     background: $bg;
     transition: $transition-all;
@@ -11,7 +9,7 @@
     -moz-transition: $transition-all;
     -ms-transition: $transition-all;
     -o-transition: $transition-all;
-    font-weight: 700;
+    font-weight: 600;
     font-size: $font-size;
     text-align: center;
     border-radius: 5px;
@@ -20,20 +18,30 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     display: inline-block;
+    height: auto;
     &:focus {
         border: none;
     }
 }
 
 .btn-evulus {
-    @include btn-personalizado($color-btn, 0px, auto, 1.5rem);
+    @include btn-personalizado($color-btn, 0px 37px, 1.5rem);
+    box-shadow: 0px 0px 2rem $color-btn;
     &:hover {
-        box-shadow: 0px 0px 2rem $color-btn;
+        box-shadow: 0px 0px 3rem $color-btn;
+        color: $color-texo;
     }
 }
 
+.btn-green {
+    @include btn-personalizado($color-principal, 12px 40px, calc(23px + .5vw));
+    box-shadow: 0px 0px 2rem white;
+    border-radius: 40px;
+    color: $color-secundario;
+}
+
 .btn-evulus-medium {
-    @include btn-personalizado($color-btn, 0px 20px 4px 20px, auto, 1rem);
+    @include btn-personalizado($color-btn, 15px 20px, 1rem);
     &:hover {
         background: #e0a800;
         color: $color-texo !important;
@@ -44,8 +52,23 @@
     }
 }
 
+.btn-evulus-icon {
+    @include btn-personalizado($color-btn, 5px 25px, 1rem);
+    &:hover {
+        background: #e0a800;
+        color: $color-texo !important;
+        text-decoration: none !important;
+    }
+    &:active {
+        background: #d39e00;
+    }
+    img {
+        width: 43px
+    }
+}
+
 .btn-evulus-small {
-    @include btn-personalizado($color-btn, .5rem, auto, 1rem);
+    @include btn-personalizado($color-btn, .5rem, 1rem);
     margin: 0;
     &:hover {
         background: #e0a800;
@@ -54,69 +77,83 @@
     }
     &:active {
         background: #d39e00;
-    }
-}
-
-
-/* ------------------ BTN-EVULUS-WHITE ------------------ */
-
-@mixin btn-white($weight-w, $padding-p, $radius-br) {
-    width: $weight-w;
-    min-height: 67px;
-    background: $color-secundario;
-    padding: $padding-p;
-    display: flex;
-    align-items: center;
-    box-shadow: $box-shadow-primario;
-    transition: $transition-all;
-    -webkit-transition: $transition-all;
-    -moz-transition: $transition-all;
-    -ms-transition: $transition-all;
-    -o-transition: $transition-all;
-    border-radius: $radius-br;
-    -webkit-border-radius: $radius-br;
-    -moz-border-radius: $radius-br;
-    -ms-border-radius: $radius-br;
-    -o-border-radius: $radius-br;
-    &:hover {
-        background: #f2f2f2;
     }
 }
 
 
 /* ----------------------- BTN NAV ---------------------- */
 
-.btn-1,
-.btn-2 {
-    @include btn-personalizado($color-principal, 0rem .5rem 5px, auto, .9rem);
+.btn-dark {
+    @include btn-personalizado(transparent, 0px 1.5rem 3px, .9rem);
+    margin: 10px 15px 10px 0px;
+    border: 2px solid $color-principal;
+    color: $color-texo;
+    &:hover {
+        background: $color-principal;
+        border: 2px solid $color-principal;
+    }
+    &:active {
+        background: $color-principal;
+        color: $color-texo-claro;
+        border: 2px solid $color-principal;
+    }
+    &:focus {
+        background: $color-principal;
+        color: $color-texo-claro;
+        border: 2px solid $color-principal;
+    }
+}
+
+.btn-dark.active {
+    background: $color-principal;
+    color: $color-texo-claro;
+    border: 2px solid $color-principal;
+}
+
+.btn-dark-1 {
+    @extend .btn-dark;
+    padding: 5px 1.5rem 3px;
+    &:hover {
+        color: $color-secundario;
+    }
+}
+
+
+/* --------------------- BUTTON TOP --------------------- */
+
+.go-top {
+    background: $color-principal;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: $borde-radius-medium;
+    -webkit-border-radius: $borde-radius-medium;
+    -moz-border-radius: $borde-radius-medium;
+    -ms-border-radius: $borde-radius-medium;
+    -o-border-radius: $borde-radius-medium;
+    transition: $transition-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
     color: $color-secundario;
-    margin: 0;
-    border: 1px solid $color-principal;
+    box-shadow: $box-shadow-terciario;
+    text-decoration: none;
+    pointer-events: none;
+    -webkit-transition: $transition-all;
+    -moz-transition: $transition-all;
+    -ms-transition: $transition-all;
+    -o-transition: $transition-all;
+    opacity: 0;
     &:hover {
-        background: $color-principal;
-        color: $color-texo-claro;
-    }
-    &.active {
-        background: $color-principal;
-        color: $color-texo-claro;
+        color: $color-secundario;
     }
 }
 
-.btn-2 {
-    border: 1px solid $color-principal;
-    color: $color-principal;
-    background: transparent;
-}
-
-.btn-evulus-green {
-    @include btn-personalizado($color-secundario, 0px .5rem 5px, 100%, .9rem);
-    white-space: nowrap;
-    &:hover {
-        background: $color-principal;
-        color: $color-texo-claro;
-    }
-    &.active {
-        background: $color-principal;
-        color: $color-texo-claro;
-    }
+.go-top.active {
+    opacity: 1;
+    bottom: 32px;
+    pointer-events: auto;
 }

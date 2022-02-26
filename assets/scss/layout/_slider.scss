@@ -1,0 +1,25 @@
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+}
+
+.owl-carousel {
+    z-index: 0;
+}
+
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    width: 80px;
+    color: $color-principal;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}

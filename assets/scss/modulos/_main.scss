@@ -1,0 +1,128 @@
+.staking,
+.transiciones,
+.slider,
+.pasos,
+.participacion,
+.reglas {
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.staking {
+    padding-top: calc(20px + 6vw);
+    .staking-content {
+        &__title {
+            h2,
+            h1 {
+                font-size: calc(40px + 2.5vw);
+            }
+            h2 {
+                font-weight: 300;
+            }
+        }
+        .btn-evulus {
+            font-size: calc(38px + 2vw);
+            margin: 50px auto;
+            display: table;
+        }
+        &__parrafo {
+            font-size: calc(17px + .5vw);
+            padding-right: 2rem;
+            h4 {
+                color: $color-texo;
+                padding: 8px;
+                font-size: calc(20px + .5vw);
+                background: $color-btn;
+                width: fit-content;
+                border-radius: $borde-radius-medium;
+            }
+        }
+    }
+    .btn-green {
+        margin-top: 30px;
+    }
+}
+
+
+/* --------------------- REQUISITOS --------------------- */
+
+.requisitos {
+    border-top: 1px solid $color-secundario;
+    border-bottom: 1px solid $color-secundario;
+    .participacion {
+        width: 90%;
+        margin: 0 auto;
+        .participacion-content {
+            p {
+                font-size: calc(14px + .4vw);
+            }
+            div {
+                a {
+                    width: 50px;
+                    background: transparent;
+                }
+            }
+        }
+        .pasos {
+            border-top: 1px solid $color-secundario;
+        }
+    }
+}
+
+
+/* ----------------------- .REGLAS ---------------------- */
+
+.reglas {
+    .row {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__list {
+        list-style: decimal-leading-zero;
+        margin-left: 28px;
+    }
+}
+
+.slider {
+    background: $color-secundario;
+}
+
+.transiciones {
+    .contador-container {
+        color: $color-secundario;
+        h5,
+        span {
+            font-size: calc(40px + 2.5vw);
+        }
+        p {
+            font-size: calc(18px + .5vw);
+        }
+    }
+}
+
+
+/* ----------------------- CONTACT ---------------------- */
+
+.contact {
+    padding: 80px 0px;
+    color: $color-secundario;
+    text-align: center;
+    position: relative;
+    &__content {
+        position: relative;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+}

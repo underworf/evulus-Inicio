@@ -1,0 +1,26 @@
+.footer {
+    color: $color-secundario;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    &__content {
+        h5 {
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+        .btn-evulus-small {
+            padding: 0px 15px;
+            font-size: 10px;
+        }
+        .social-icons--white {
+            li a img {
+                width: 20px;
+                height: 20px;
+                margin: 0px 10px 0px 0px;
+            }
+        }
+        a:hover {
+            color: $color-secundario;
+            text-decoration: underline;
+        }
+    }
+}

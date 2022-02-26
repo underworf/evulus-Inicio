@@ -1,0 +1,45 @@
+.navbar {
+    background: $color-secundario;
+    // background: black;
+    transition: $transition-all;
+    -webkit-transition: $transition-all;
+    -moz-transition: $transition-all;
+    -ms-transition: $transition-all;
+    -o-transition: $transition-all;
+    .navbar-toggler {
+        color: $color-secundario;
+    }
+    .logo {
+        width: 160px;
+        img {
+            width: 100%;
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &:hover {
+        // background: $color-secundario;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        background: black;
+        .logo {
+            width: 120px;
+        }
+    }
+    .btn-dark,
+    .btn-evulus-small {
+        font-size: .6rem;
+        padding: 0px 1rem 5px;
+    }
+    .btn-dark {
+        border: 2px solid white;
+        color: white;
+    }
+}

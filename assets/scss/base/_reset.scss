@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-img {
-    vertical-align: bottom;
-}
-
 video,
 picture,
 iframe,
@@ -24,10 +20,8 @@ input {
 }
 
 a {
-    display: block;
     text-decoration: none;
     color: $color-secundario;
-    line-height: 16px;
     &:hover {
         text-decoration: none;
     }
@@ -46,6 +40,7 @@ html {
 body {
     min-height: 100vh;
     font-family: 'GalanoGrotesque';
+    background: linear-gradient(144.03deg, #000000 40.92%, #07836F 87.77%), #FFFFFF;
 }
 
 section {
@@ -54,4 +49,16 @@ section {
 
 .row {
     margin: 0;
+}
+
+main {
+    p,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $color-secundario;
+    }
 }
