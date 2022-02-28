@@ -87,11 +87,12 @@
 }
 
 .btn-evulus-white {
-    @include btn-personalizado($color-secundario, 5px 35px, calc(12px + 1.8vw));
+    @include btn-personalizado($color-secundario, 5px 28px, calc(12px + 1.5vw));
     color: $color-principal;
     border-radius: 30px;
     box-shadow: 0px 0px 2rem $color-btn;
     text-transform: uppercase;
+    white-space: nowrap;
     &:hover {
         box-shadow: 0px 0px 3rem $color-btn;
         color: $color-principal;

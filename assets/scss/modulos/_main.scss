@@ -49,10 +49,12 @@
 
 .staking {
     position: relative;
-    padding-top: calc(60px + 7vw);
+    min-height: 100vh;
+    padding-top: calc(40px + 7vw);
     background: url(../img/velas.png) no-repeat top;
     .staking-content {
         &__title {
+            padding-top: calc(10px + 2vw);
             h2,
             h1 {
                 font-size: calc(30px + 2.8vw);
@@ -69,7 +71,6 @@
         }
         &__parrafo {
             font-size: calc(17px + .5vw);
-            padding-right: 2rem;
             h4 {
                 color: $color-texo;
                 padding: 8px;
