@@ -54,10 +54,10 @@
     background: url(../img/velas.png) top;
     .staking-content {
         &__title {
-            padding-top: calc(20px + 2vw);
+            padding-top: calc(10px + 2vw);
             h2,
             h1 {
-                font-size: calc(30px + 2.8vw);
+                font-size: calc(30px + 3.5vw);
             }
             h2 {
                 font-weight: 300;
@@ -70,7 +70,7 @@
             border-radius: 20px;
         }
         &__parrafo {
-            font-size: calc(12px + .5vw);
+            font-size: calc(14px + .5vw);
             h4 {
                 color: $color-texo;
                 padding: 8px;

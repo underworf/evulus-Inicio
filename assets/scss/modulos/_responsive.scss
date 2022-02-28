@@ -3,12 +3,13 @@
         max-width: 1280px;
     }
     .staking {
-        padding-top: calc(20px + 7vw);
+        padding-top: calc(40px + 3vw);
         .staking-content {
             &__title {
+                padding-top: calc(10px + 1.5vw);
                 h1,
                 h2 {
-                    font-size: calc(25px + 2.8vw);
+                    font-size: calc(30px + 3vw);
                 }
             }
             .btn-evulus {

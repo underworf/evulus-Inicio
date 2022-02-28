@@ -903,11 +903,11 @@ main h5 {
   background: url(../img/velas.png) top;
 }
 .staking .staking-content__title {
-  padding-top: calc(20px + 2vw);
+  padding-top: calc(10px + 2vw);
 }
 .staking .staking-content__title h2,
 .staking .staking-content__title h1 {
-  font-size: calc(30px + 2.8vw);
+  font-size: calc(30px + 3.5vw);
 }
 .staking .staking-content__title h2 {
   font-weight: 300;
@@ -919,7 +919,7 @@ main h5 {
   border-radius: 20px;
 }
 .staking .staking-content__parrafo {
-  font-size: calc(12px + .5vw);
+  font-size: calc(14px + .5vw);
 }
 .staking .staking-content__parrafo h4 {
   color: black;
@@ -1082,11 +1082,14 @@ main h5 {
   }
 
   .staking {
-    padding-top: calc(20px + 7vw);
+    padding-top: calc(40px + 3vw);
+  }
+  .staking .staking-content__title {
+    padding-top: calc(10px + 1.5vw);
   }
   .staking .staking-content__title h1,
 .staking .staking-content__title h2 {
-    font-size: calc(25px + 2.8vw);
+    font-size: calc(30px + 3vw);
   }
   .staking .staking-content .btn-evulus {
     font-size: calc(20px + 3vw);
