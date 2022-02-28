@@ -48,7 +48,9 @@
 }
 
 .staking {
-    padding-top: calc(50px + 6vw);
+    position: relative;
+    padding-top: calc(60px + 7vw);
+    background: url(../img/velas.png) no-repeat top;
     .staking-content {
         &__title {
             h2,
@@ -77,6 +79,11 @@
                 border-radius: $borde-radius-medium;
             }
         }
+    }
+    &__img {
+        position: relative;
+        max-width: 500px;
+        margin: 0 auto;
     }
     .btn-green {
         margin: 30px auto 0px auto;

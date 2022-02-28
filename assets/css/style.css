@@ -896,7 +896,9 @@ main h5 {
 }
 
 .staking {
-  padding-top: calc(50px + 6vw);
+  position: relative;
+  padding-top: calc(60px + 7vw);
+  background: url(../img/velas.png) no-repeat top;
 }
 .staking .staking-content__title h2,
 .staking .staking-content__title h1 {
@@ -922,6 +924,11 @@ main h5 {
   background: #ffbe1b;
   width: fit-content;
   border-radius: 5px;
+}
+.staking__img {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .staking .btn-green {
   margin: 30px auto 0px auto;
