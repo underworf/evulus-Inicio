@@ -50,21 +50,21 @@
 .staking {
     position: relative;
     min-height: 100vh;
-    padding-top: calc(40px + 7vw);
+    padding-top: calc(30px + 6vw);
     background: url(../img/velas.png) top;
     .staking-content {
         &__title {
             padding-top: calc(10px + 2vw);
             h2,
             h1 {
-                font-size: calc(30px + 3.5vw);
+                font-size: 80px;
             }
             h2 {
                 font-weight: 300;
             }
         }
         .btn-evulus {
-            font-size: calc(30px + 3vw);
+            font-size: 73px;
             margin: 50px auto;
             display: table;
             border-radius: 20px;
