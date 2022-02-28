@@ -67,6 +67,9 @@
 //     }
 // }
 @media screen and (max-width: 400px) {
+    .subtitle {
+        margin-bottom: 20px;
+    }
     .btn-evulus-white,
     .btn-green,
     .btn-evulus-icon,
@@ -75,5 +78,10 @@
     }
     .btn-green {
         padding: 5px 20px;
+    }
+    .btn-evulus-white {
+        width: 100%;
+        white-space: normal;
+        margin: 20px auto !important;
     }
 }

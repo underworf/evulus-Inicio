@@ -859,8 +859,8 @@ main h5 {
 }
 
 .subtitle {
-  font-size: calc(25px + 1.3wv);
-  margin-bottom: 40px;
+  font-size: calc(28px + 1.3wv);
+  margin-bottom: 30px;
 }
 
 @keyframes aparecer {
@@ -985,6 +985,10 @@ main h5 {
 }
 
 /* ------------------------ PASOS ----------------------- */
+.pasos-buttons {
+  margin-top: 20px;
+}
+
 /* ----------------------- .REGLAS ---------------------- */
 .reglas .row {
   width: 85%;
@@ -1118,6 +1122,10 @@ main h5 {
   }
 }
 @media screen and (max-width: 400px) {
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
   .btn-evulus-white,
 .btn-green,
 .btn-evulus-icon,
@@ -1127,6 +1135,12 @@ main h5 {
 
   .btn-green {
     padding: 5px 20px;
+  }
+
+  .btn-evulus-white {
+    width: 100%;
+    white-space: normal;
+    margin: 20px auto !important;
   }
 }
 
