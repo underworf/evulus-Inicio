@@ -1137,10 +1137,18 @@ main h5 {
     padding: 5px 20px;
   }
 
-  .btn-evulus-white {
+  .btn-evulus-white,
+.btn-evulus-icon {
     width: 100%;
     white-space: normal;
+  }
+
+  .btn-evulus-white {
     margin: 20px auto !important;
+  }
+
+  .reglas__list {
+    margin: 0;
   }
 }
 

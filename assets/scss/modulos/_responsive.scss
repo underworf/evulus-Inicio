@@ -51,21 +51,6 @@
     }
 }
 
-// @media screen and(min-width: 768px) {
-//     .container {
-//         max-width: 800px;
-//     }
-// }
-// @media screen and (min-width: 992px) {
-//     .container {
-//         max-width: 1200px;
-//     }
-// }
-// @media screen and (min-width:1400px) {
-//     .container {
-//         max-width: 1400px;
-//     }
-// }
 @media screen and (max-width: 400px) {
     .subtitle {
         margin-bottom: 20px;
@@ -79,9 +64,15 @@
     .btn-green {
         padding: 5px 20px;
     }
-    .btn-evulus-white {
+    .btn-evulus-white,
+    .btn-evulus-icon {
         width: 100%;
         white-space: normal;
+    }
+    .btn-evulus-white {
         margin: 20px auto !important;
+    }
+    .reglas__list {
+        margin: 0;
     }
 }
