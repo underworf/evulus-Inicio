@@ -1,6 +1,5 @@
 .navbar {
     background: $color-secundario;
-    // background: black;
     transition: $transition-all;
     -webkit-transition: $transition-all;
     -moz-transition: $transition-all;
@@ -21,8 +20,9 @@
             box-shadow: none;
         }
     }
-    &:hover {
-        // background: $color-secundario;
+    .btn-dark-1,
+    .btn-evulus-small {
+        padding: 5px 1.5rem 3px;
     }
 }
 

@@ -61,6 +61,162 @@
     </header>
 
     <main>
+        <!-- --------------------- MODAL --------------------- -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+                    <div class="modal-header-cal">
+                        <h2>Calcular Beneficio</h2>
+                        <p>APY Actual 250%</p>
+                    </div>
+
+
+
+                    <div class="modal-main-cal">
+
+
+                        <div class="cantidad">
+                            <div class="cantidad-evu">
+                                <h5>Cantidad EVU</h5>
+                                <div class="data-value">
+                                    <input type="text" class="" value="Monto EVU">
+                                    <span class="value">$0.00</span>
+                                </div>
+
+
+                                </input>
+                            </div>
+
+
+                            <div class="component-day">
+                                <div class="day-mes">
+
+                                    <div class="day-mes__items">
+                                        <span>1 Mes</span>
+                                        <span>3 Mes</span>
+                                        <span>6 Mes</span>
+                                        <span>12 Mes</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="slider-range">
+
+                                    <div class="porcentaje">100%</div>
+                                    <div class="slider">
+                                        <input class="range" type="range" min="0" max="100" value="40">
+                                    </div>
+                                    <div class="next"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="montos">
+
+                            <div class="data-value">
+
+                                <input type="text" class="" value="Monto Diario"><span class="value">$0.00</span>
+                            </div>
+                            <div class="data-value">
+
+                                <input type="text" class="" value="Monto Mensual"><span class="value">$0.00</span>
+                            </div>
+                            <div class="data-value">
+
+                                <input type="text" class="" value="Monto Total"><span class="value">$0.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="modal-footer-cal">
+
+                        <div class="component-mensual">
+
+                            <div class="meses">
+                                <div class="mes-title">Ganancia Estimada</div>
+
+                                <div class="mes__items-container d-flex">
+
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">1</div>
+                                        <div class="item-mensual__value active">5%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">2</div>
+                                        <div class="item-mensual__value active">8%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">3</div>
+                                        <div class="item-mensual__value active">12%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">4</div>
+                                        <div class="item-mensual__value active">16%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">5</div>
+                                        <div class="item-mensual__value">18%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">6</div>
+                                        <div class="item-mensual__value">20%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">7</div>
+                                        <div class="item-mensual__value">23%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">8</div>
+                                        <div class="item-mensual__value">27%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">9</div>
+                                        <div class="item-mensual__value">30%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">10</div>
+                                        <div class="item-mensual__value">33%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">11</div>
+                                        <div class="item-mensual__value">35%</div>
+                                    </div>
+                                    <div class="item-mes">
+                                        <div class="item-mensual__number">12</div>
+                                        <div class="item-mensual__value">40%</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mensual-total ">
+                                <div class="mensual-total__title">% Total</div>
+
+                                <button type="button">250%</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- ---------------- FIN MODAL ---------------- -->
         <section class="staking">
             <div class="container">
                 <div class="row">
@@ -109,19 +265,20 @@
                     <div class="participacion-content col-md-6 ">
                         <a href="# " class="btn-evulus-white ">Obtener Evu Token</a>
                         <p>Adquirir Evu Token a través de las distintas plataformas permitidas y depositar en tu billetera descentralizada. </p>
-                        <div class="d-flex ">
-                            <a href="# " target="_blank"><img src=" " alt="probit "><img src=" " alt=" "></a>
-                            <a href="# " target="_blank"><img src=" " alt="pancakeSwap "><img src=" " alt=" "></a>
-                            <a href="# " target="_blank"><img src=" " alt="BitMart "><img src=" " alt=" "></a>
+                        <div class="d-flex participacion-content__items-1 ">
+                            <a href="# " target="_blank"><img src="assets/icons/probit.svg" alt="probit "></a>
+                            <a href="# " target="_blank"><img src="assets/icons/pancakeswap.svg" alt="pancakeSwap "></a>
+                            <a href="# " target="_blank"><img src="assets/icons/bitmart.svg" alt="BitMart "></a>
                         </div>
                     </div>
                     <div class="participacion-content col-md-6 ">
                         <a href="# " class="btn-evulus-white ">Wallets Permitidas</a>
                         <p>Wallets descentralizadas que permitan conexión con smart contracts. </p>
-                        <div class="d-flex ">
-                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/metamask_1.svg " alt=" "></a>
-                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/trustwallet.svg " alt=" "></a>
-                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/poke.svg " alt=" "></a>
+                        <div class="d-flex align-items-center participacion-content__items-2 ">
+                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/metamask_1.svg " alt="metamask "></a>
+                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/trustwallet.svg " alt="trustwallet "></a>
+
+                            <a href="#" target="_blank"><img class="fluid " src="assets/icons/poke.svg " alt="poke"></a>
                         </div>
                     </div>
                 </div>
@@ -142,9 +299,9 @@
                     <h2 class="text-center subtitle">Tu <b>Staking</b> en 3 pasos </h2>
 
                     <div class="pasos-buttons flex-wrap gap-4 d-flex justify-content-lg-between justify-content-around ">
-                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/icon-coin.png " alt="coin ">Comprar Evu Tokens</a>
-                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/icon-cartera.png " alt="card ">Tu Wallet Descentralizada </a>
-                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/icon-power.png " alt="power "> Conectar Wallet</a>
+                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/icon evu.svg" alt="coin evu">Comprar Evu Tokens</a>
+                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/wallet.svg" alt="cartera">Tu Wallet Descentralizada </a>
+                        <a href="# " class="btn-evulus-icon "><img src="assets/icons/conectar.svg" alt="conectar"> Conectar Wallet</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +383,7 @@
 
         </section>
 
-        <section class="slider ">
+        <section class="slider-platform ">
             <div class="owl-carousel owl-theme " id="owl-carousel ">
                 <div class="item " style="width: 200px; "> <img class="img-fluid " src="assets/icons/icons-light/bihance-light.png " alt="bihance ">
                 </div>

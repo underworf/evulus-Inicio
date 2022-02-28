@@ -83,7 +83,7 @@ const iniciarConteo = elementos => {
 }
 
 const observador = new IntersectionObserver(iniciarConteo, {
-    threshold: 0.75
+    threshold: .95
 })
 
 const elementosHTML = document.querySelectorAll('.contador')

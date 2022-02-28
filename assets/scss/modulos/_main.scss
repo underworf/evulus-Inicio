@@ -1,6 +1,6 @@
 .staking,
 .transiciones,
-.slider,
+.slider-platform,
 .pasos,
 .participacion,
 .reglas {
@@ -13,6 +13,34 @@
     margin-bottom: 40px;
 }
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+.show-number {
+    opacity: 0;
+}
+
+.animation-number {
+    animation: aparecer 1.3s;
+    -webkit-animation: aparecer 1.3s;
+}
+
 .requisitos,
 .pasos,
 .reglas {
@@ -20,7 +48,7 @@
 }
 
 .staking {
-    padding-top: calc(40px + 6vw);
+    padding-top: calc(50px + 6vw);
     .staking-content {
         &__title {
             h2,
@@ -35,6 +63,7 @@
             font-size: calc(30px + 3vw);
             margin: 50px auto;
             display: table;
+            border-radius: 20px;
         }
         &__parrafo {
             font-size: calc(17px + .5vw);
@@ -50,7 +79,7 @@
         }
     }
     .btn-green {
-        margin-top: 30px;
+        margin: 30px auto 0px auto;
     }
 }
 
@@ -66,14 +95,31 @@
             p {
                 font-size: calc(14px + .4vw);
             }
-            div {
+            &__items-2 {
                 width: fit-content;
                 border: 1px solid $color-secundario;
                 border-radius: 10px;
                 a {
                     margin: 5px;
-                    width: 50px;
+                    width: 40px;
                     background: transparent;
+                    span {
+                        font-size: 8px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            &__items-1 {
+                width: fit-content;
+                a {
+                    margin: 5px;
+                    border: 1px solid $color-secundario;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    background: transparent;
+                    img {
+                        width: 110px;
+                    }
                 }
             }
             .btn-evulus-white {
@@ -119,7 +165,7 @@
     }
 }
 
-.slider {
+.slider-platform {
     background: $color-secundario;
 }
 

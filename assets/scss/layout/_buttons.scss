@@ -19,6 +19,7 @@
     -o-border-radius: 5px;
     display: inline-block;
     height: auto;
+    user-select: none;
     &:focus {
         border: none;
     }
@@ -38,6 +39,10 @@
     box-shadow: 0px 0px 2rem white;
     border-radius: 40px;
     color: $color-secundario;
+    &:hover {
+        box-shadow: 0px 0px 3rem $color-secundario;
+        color: $color-secundario;
+    }
 }
 
 .btn-evulus-medium {
@@ -86,7 +91,14 @@
     color: $color-principal;
     border-radius: 30px;
     box-shadow: 0px 0px 2rem $color-btn;
-    text-transform: uppercase
+    text-transform: uppercase;
+    &:hover {
+        box-shadow: 0px 0px 3rem $color-btn;
+        color: $color-principal;
+    }
+    &:active {
+        color: $color-principal-oscuro;
+    }
 }
 
 
@@ -110,6 +122,7 @@
         background: $color-principal;
         color: $color-texo-claro;
         border: 2px solid $color-principal;
+        box-shadow: none !important;
     }
 }
 

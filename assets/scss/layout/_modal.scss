@@ -1,0 +1,374 @@
+/* ------------------------ MODAL ----------------------- */
+
+.modal-dialog {
+    max-width: none;
+    .modal-content {
+        box-shadow: $box-shadow-secundario;
+        margin: 0 auto;
+        background: url(../img/bg_modal.png) no-repeat center;
+        background-size: inherit;
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        width: 650px;
+        position: relative;
+        padding: 20px 0px;
+        .modal-header-cal,
+        .cantidad,
+        .montos,
+        .modal-footer-cal {
+            border-bottom: 1px solid $color-secundario;
+            padding: 20px 50px;
+        }
+        .btn-close {
+            position: absolute;
+            right: 20px;
+            filter: invert(1);
+            -webkit-filter: invert(1);
+            opacity: 1;
+        }
+        .modal-header-cal {
+            text-align: center;
+            color: $color-secundario;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .modal-main-cal {
+            .cantidad {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+                .cantidad-evu {
+                    h5 {
+                        color: $color-secundario;
+                    }
+                    .data-value {
+                        font-size: 1rem;
+                        margin: 0 auto;
+                        width: 180px;
+                        height: 44px;
+                    }
+                }
+                .component-day .day-mes {
+                    justify-content: center;
+                }
+            }
+            .montos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+                .data-value {
+                    width: 80%;
+                }
+            }
+        }
+        .modal-footer-cal {
+            text-align: center;
+            border-bottom: none;
+            .component-mensual {
+                flex-wrap: wrap;
+                justify-content: center;
+                .meses {
+                    width: 100%;
+                }
+                .mensual-total {
+                    button {
+                        width: 100%;
+                    }
+                }
+                .mes-title,
+                .mensual-total__title {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.form-select,
+.data-value {
+    width: calc(50% - 20px);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 7px solid $color-secundario;
+    height: 54px;
+    background: #f2f2f1;
+    padding: 0rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: #676767;
+    font-size: 1rem;
+    input {
+        width: 80%;
+        background: transparent;
+        color: inherit;
+        text-align: start;
+    }
+}
+
+
+/* ------------------------ component-rango----------------------- */
+
+.next {
+    width: 0;
+    height: 0;
+    border-left: 14px solid $color-secundario;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.prev {
+    width: 0;
+    height: 0;
+    border-right: 15px solid $color-secundario;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.slider-range {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: $color-secundario;
+    gap: 10px;
+    margin: 10px auto;
+    .porcentaje {
+        padding-bottom: 2px;
+    }
+    .slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .range {
+            width: 100%;
+            height: 5px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            -webkit-appearance: none;
+            outline: none;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 20px;
+                height: 20px;
+                background: #2baae2;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+                box-shadow: 0 0 0 0 #2baae2;
+                transition: all 300ms;
+                -webkit-transition: all 300ms;
+                -moz-transition: all 300ms;
+                -ms-transition: all 300ms;
+                -o-transition: all 300ms;
+                &:hover {
+                    box-shadow: 0 0 0 7px #2babe225;
+                }
+            }
+        }
+    }
+}
+
+
+/* -------------------- COMPONENT-DAY ------------------- */
+
+.component-day {
+    .day-mes {
+        display: flex;
+        .day-mes__title {
+            color: $color-secundario;
+            width: 75px;
+        }
+        &__items {
+            display: flex;
+            width: 87%;
+            justify-content: space-between;
+            span {
+                height: 25px;
+                padding: 0px 8px;
+                background: $color-secundario;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+/* ----------------- .COMPONENTE-MENSUA ----------------- */
+
+.component-mensual {
+    display: flex;
+    align-items: flex-end;
+    color: $color-secundario;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .meses {
+        width: 80%;
+        .mes-title {
+            font-size: 1.3rem;
+        }
+        .mes__items-container {
+            text-align: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            justify-content: center;
+            .item-mes {
+                width: 40px;
+                margin: 2px;
+                .item-mensual__value {
+                    width: 100%;
+                    height: 30px;
+                    border-radius: $borde-radius-medium;
+                    -webkit-border-radius: $borde-radius-medium;
+                    -moz-border-radius: $borde-radius-medium;
+                    -ms-border-radius: $borde-radius-medium;
+                    -o-border-radius: $borde-radius-medium;
+                    background: transparent;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    transition: all 300ms;
+                    &.active {
+                        background: $color-btn;
+                        border: 1px solid $color-btn;
+                        color: $color-texo;
+                    }
+                    &:hover {
+                        background: $color-btn;
+                        border: 1px solid $color-btn;
+                        color: $color-texo;
+                    }
+                }
+            }
+        }
+    }
+    .mensual-total {
+        &__title {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        button {
+            padding: 0px 20px 8px 20px;
+            border-radius: $borde-radius-medium;
+            -webkit-border-radius: $borde-radius-medium;
+            -moz-border-radius: $borde-radius-medium;
+            -ms-border-radius: $borde-radius-medium;
+            -o-border-radius: $borde-radius-medium;
+            margin: 2px;
+            background: $color-btn;
+            border: 1px solid $color-btn;
+            color: $color-texo;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .modal {
+        .modal-content {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .modal-dialog {
+        .modal-content {
+            .modal-header-cal,
+            .cantidad,
+            .montos,
+            .modal-footer-cal {
+                padding: 10px;
+                border: none;
+            }
+            .modal-header-cal {
+                padding-top: 20px;
+                h2 {
+                    font-size: 35px;
+                }
+            }
+            .modal-main-cal {
+                .cantidad {
+                    gap: 20px;
+                }
+            }
+            .modal-footer-cal .component-mensual .meses .mes-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .panel__day {
+        padding: .5rem;
+        .component-day .day-mes__items span {
+            height: 18px;
+            width: 40px;
+            padding: 0;
+            text-align: center;
+            font-size: .7rem;
+        }
+    }
+    .component-day .day-mes__items span {
+        height: 20px;
+        width: 40px;
+        padding: 0;
+        text-align: center;
+        font-size: .7rem;
+    }
+    .slider-range {
+        gap: 5px;
+    }
+    .modal-dialog {
+        .modal-content {
+            width: 100%;
+            .modal-header-cal,
+            .cantidad,
+            .montos,
+            .modal-footer-cal {
+                padding: 5px 10px;
+                border: none;
+            }
+            .modal-header-cal {
+                padding-top: 20px;
+            }
+            .modal-main-cal {
+                .montos {
+                    .data-value {
+                        width: 90%;
+                    }
+                }
+                .cantidad {
+                    gap: 20px;
+                }
+            }
+            .modal-footer-cal .component-mensual .meses .mes-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
