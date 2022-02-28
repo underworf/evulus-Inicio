@@ -917,6 +917,8 @@ main h5 {
   margin: 50px auto;
   display: table;
   border-radius: 20px;
+  position: relative;
+  left: -10%;
 }
 .staking .staking-content__parrafo {
   font-size: calc(14px + .5vw);
@@ -1124,6 +1126,16 @@ main h5 {
   }
 }
 @media screen and (max-width: 991px) {
+  .staking .staking-content__title h1,
+.staking .staking-content__title h2 {
+    font-size: calc(0px + 8vw);
+  }
+  .staking .staking-content .btn-evulus {
+    left: 0;
+  }
+  .staking .staking-content__parrafo h4 {
+    font-size: calc(15px + .5vw);
+  }
   .staking .staking__img img {
     position: relative;
     left: 0;
@@ -1136,6 +1148,11 @@ main h5 {
   }
 }
 @media screen and (max-width: 400px) {
+  .staking .staking-content__title h1,
+.staking .staking-content__title h2 {
+    font-size: calc(30px + 3vw);
+  }
+
   .subtitle {
     margin-bottom: 20px;
   }

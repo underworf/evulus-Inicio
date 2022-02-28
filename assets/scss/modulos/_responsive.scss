@@ -54,10 +54,28 @@
 }
 
 @media screen and (max-width:991px) {
-    .staking .staking__img {
-        img {
-            position: relative;
-            left: 0;
+    .staking {
+        .staking-content {
+            &__title {
+                h1,
+                h2 {
+                    font-size: calc(0px + 8vw);
+                }
+            }
+            .btn-evulus {
+                left: 0;
+            }
+            &__parrafo {
+                h4 {
+                    font-size: calc(15px + .5vw);
+                }
+            }
+        }
+        .staking__img {
+            img {
+                position: relative;
+                left: 0;
+            }
         }
     }
 }
@@ -72,6 +90,12 @@
 }
 
 @media screen and (max-width: 400px) {
+    .staking .staking-content__title {
+        h1,
+        h2 {
+            font-size: calc(30px + 3vw);
+        }
+    }
     .subtitle {
         margin-bottom: 20px;
     }

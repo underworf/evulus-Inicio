@@ -68,6 +68,8 @@
             margin: 50px auto;
             display: table;
             border-radius: 20px;
+            position: relative;
+            left: -10%;
         }
         &__parrafo {
             font-size: calc(14px + .5vw);
