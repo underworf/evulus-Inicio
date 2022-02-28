@@ -900,10 +900,10 @@ main h5 {
   position: relative;
   min-height: 100vh;
   padding-top: calc(40px + 7vw);
-  background: url(../img/velas.png) no-repeat top;
+  background: url(../img/velas.png) top;
 }
 .staking .staking-content__title {
-  padding-top: calc(10px + 2vw);
+  padding-top: calc(20px + 2vw);
 }
 .staking .staking-content__title h2,
 .staking .staking-content__title h1 {
@@ -919,20 +919,24 @@ main h5 {
   border-radius: 20px;
 }
 .staking .staking-content__parrafo {
-  font-size: calc(17px + .5vw);
+  font-size: calc(12px + .5vw);
 }
 .staking .staking-content__parrafo h4 {
   color: black;
   padding: 8px;
-  font-size: calc(20px + .5vw);
+  font-size: calc(18px + .5vw);
   background: #ffbe1b;
   width: fit-content;
   border-radius: 5px;
 }
 .staking__img {
   position: relative;
-  max-width: 500px;
   margin: 0 auto;
+  max-width: 400px;
+}
+.staking__img img {
+  position: absolute;
+  left: -110px;
 }
 .staking .btn-green {
   margin: 30px auto 0px auto;
@@ -1077,23 +1081,31 @@ main h5 {
     max-width: 1280px;
   }
 
+  .staking {
+    padding-top: calc(20px + 7vw);
+  }
   .staking .staking-content__title h1,
 .staking .staking-content__title h2 {
     font-size: calc(25px + 2.8vw);
   }
   .staking .staking-content .btn-evulus {
     font-size: calc(20px + 3vw);
-  }
-  .staking .staking-content__parrafo {
-    font-size: calc(12px + .5vw);
+    margin: 30px auto;
   }
   .staking .staking-content__parrafo h4 {
-    color: black;
-    padding: 8px;
-    font-size: calc(20px + .5vw);
-    background: #ffbe1b;
-    width: fit-content;
-    border-radius: 5px;
+    font-size: calc(15px + .5vw);
+  }
+  .staking__img img {
+    left: -70px;
+  }
+  .staking .btn-green {
+    margin: 30px auto 0px auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .staking .staking__img img {
+    position: relative;
+    left: 0;
   }
 }
 @media screen and (max-width: 767px) {

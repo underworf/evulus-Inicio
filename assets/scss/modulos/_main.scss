@@ -51,10 +51,10 @@
     position: relative;
     min-height: 100vh;
     padding-top: calc(40px + 7vw);
-    background: url(../img/velas.png) no-repeat top;
+    background: url(../img/velas.png) top;
     .staking-content {
         &__title {
-            padding-top: calc(10px + 2vw);
+            padding-top: calc(20px + 2vw);
             h2,
             h1 {
                 font-size: calc(30px + 2.8vw);
@@ -70,11 +70,11 @@
             border-radius: 20px;
         }
         &__parrafo {
-            font-size: calc(17px + .5vw);
+            font-size: calc(12px + .5vw);
             h4 {
                 color: $color-texo;
                 padding: 8px;
-                font-size: calc(20px + .5vw);
+                font-size: calc(18px + .5vw);
                 background: $color-btn;
                 width: fit-content;
                 border-radius: $borde-radius-medium;
@@ -83,8 +83,12 @@
     }
     &__img {
         position: relative;
-        max-width: 500px;
         margin: 0 auto;
+        max-width: 400px;
+        img {
+            position: absolute;
+            left: -110px;
+        }
     }
     .btn-green {
         margin: 30px auto 0px auto;

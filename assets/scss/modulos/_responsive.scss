@@ -3,6 +3,7 @@
         max-width: 1280px;
     }
     .staking {
+        padding-top: calc(20px + 7vw);
         .staking-content {
             &__title {
                 h1,
@@ -12,18 +13,30 @@
             }
             .btn-evulus {
                 font-size: calc(20px + 3vw);
+                margin: 30px auto;
             }
             &__parrafo {
-                font-size: calc(12px + .5vw);
                 h4 {
-                    color: $color-texo;
-                    padding: 8px;
-                    font-size: calc(20px + .5vw);
-                    background: $color-btn;
-                    width: fit-content;
-                    border-radius: $borde-radius-medium;
+                    font-size: calc(15px + .5vw);
                 }
             }
+        }
+        &__img {
+            img {
+                left: -70px;
+            }
+        }
+        .btn-green {
+            margin: 30px auto 0px auto;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .staking .staking__img {
+        img {
+            position: relative;
+            left: 0;
         }
     }
 }
